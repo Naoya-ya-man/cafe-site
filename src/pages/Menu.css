@@ -1,0 +1,129 @@
+.menu-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu-page h2{
+  color: aliceblue;
+  font-size: 35px;
+}
+
+.cart-total-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #fff8dc; /* やさしい背景色（薄いベージュ） */
+  color: #4b3e2e; /* カフェっぽい濃いブラウン */
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 20px 0;
+}
+
+
+.menu-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fab668;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item p{
+  font-weight: bold;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.manu-item h3 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.menu-item p {
+  color: #131212;
+  font-size: 0.9rem;
+}
+
+.favorite{
+  margin-bottom: 10px;
+  background-color: rgb(243, 148, 31);
+  border-radius: 4px;
+}
+
+.buy{
+  background-color: rgb(243, 134, 134);
+  border-radius: 4px;
+}
+
+.cart-controls {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-controls button {
+  padding: 5px 10px;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.cart-total-fixed:hover{
+  cursor: pointer;
+}
+
+span{
+  font-weight: bold;
+}
+
+.close, .go{
+  margin-right: 10px;
+  background-color:#ddd;
+  border-radius: 4px;
+}
+
+.close:hover,
+.go:hover{
+  background-color: antiquewhite;
+}
+
+
+
+
+.cart-popup{
+  font-size: 1.5rem;
+  background-color: #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 600px) {
+  .cart-total-fixed {
+    right: 10px;
+    bottom: 10px;
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+}

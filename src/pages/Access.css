@@ -1,0 +1,50 @@
+.access-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.access-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background-color: aliceblue;
+  border-radius: 4px;
+}
+
+.access-info, .access-map {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.access-info h3,
+.access-info p,
+.access-map h3 {
+  background-color: #e0f0e9; /* パステルグリーン */
+  color: #333;
+  font-weight: bold;
+}
+
+/*スマホ対応*/
+@media (max-width: 768px) {
+  .access-page {
+    padding: 1rem;
+  }
+
+  .access-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .access-info {
+    font-size: 1rem;
+  }
+
+  .access-map iframe {
+    height: 250px;
+  }
+}
